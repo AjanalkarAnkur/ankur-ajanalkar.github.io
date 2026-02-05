@@ -271,10 +271,19 @@ input, textarea {
 }
 
 .nav-logo {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
     color: var(--color-accent-primary);
-    letter-spacing: -0.02em;
+    transition: transform var(--transition-fast);
+}
+
+.nav-logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-logo svg {
+    width: 36px;
+    height: 36px;
 }
 
 .nav-menu {
